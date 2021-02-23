@@ -3,16 +3,18 @@ public class Primes {
      *
      * пройтись по всем числам от 2 до 100 и проверить их на "простоту"
      */
-    public static void main() {
+    static int answer=42;
+    public static void main(String[] args) {
         for (int i=2;i<=100;i++){
             if (isPrime(i)){
                 System.out.print(i+" ");
             }
         }
+        System.out.println(answer);
     }
 
     /**
-     *
+     * метод для проверки числа на простоту
      * @param n -возможно простое число
      * @return вернуть является ли число простым
      */
