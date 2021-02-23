@@ -1,22 +1,21 @@
 public class Point3d extends Point2d {
     //координата Z
-    private double z;
+    private double zCoord;
     //Конструктор инициализации
-    public Point3d(double x, double y, double z){
-        super(x,y);
-        this.z = z;
+    public Point3d(double z){
+        zCoord = z;
     }
     //конструктор по умолчанию
     public Point3d(){
-        this(0,0,0);
+        this(0);
     }
     //возвращение координаты Z
     public double getZ(){
-        return z;
+        return zCoord;
     }
     //установка значения координаты Z
     public void setZ(double val) {
-        this.z = val;
+        zCoord = val;
     }
     //сравнение
     public boolean comparison(Point3d point){

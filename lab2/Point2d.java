@@ -1,12 +1,12 @@
 public class Point2d {
     /* координата X */
-    private double x;
+    private double xCoord;
     /* координата Y */
-    private double y;
+    private double yCoord;
     /* Конструктор инициализации */
     public Point2d ( double x, double y) {
-        this.x = x;
-        this.y = y;
+        xCoord = x;
+        yCoord = y;
     }
     /* Конструктор по умолчанию. */
     public Point2d () {
@@ -15,18 +15,18 @@ public class Point2d {
     }
     /* Возвращение координаты X */
     public double getX () {
-        return x;
+        return xCoord;
     }
     /* Возвращение координаты Y */
     public double getY () {
-        return y;
+        return yCoord;
     }
     /* Установка значения координаты X. */
     public void setX ( double val) {
-        x = val;
+        xCoord = val;
     }
     /* Установка значения координаты Y. */
     public void setY ( double val) {
-        y = val;
+        yCoord = val;
     }
 }
